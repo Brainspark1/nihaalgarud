@@ -18,18 +18,3 @@ document.getElementById('ukmt__img').addEventListener('mouseover', function() {
 document.getElementById('ukmt__img').addEventListener('mouseout', function() {
     document.getElementById('gold').style.color = ''; // Reset to original color
 });
-
-const textElements = document.querySelectorAll('.grow__text h1, .grow__text h2, .grow__text h3');
-let index = 0;
-
-function animateText() {
-    textElements.forEach((text, i) => {
-        text.classList.remove('grow');
-        if (i === index) {
-            text.classList.add('grow');
-        }
-    });
-    index = (index + 1) % textElements.length;
-}
-
-setInterval(animateText, 1000);
