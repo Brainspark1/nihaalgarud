@@ -1,0 +1,439 @@
+#mouse__div__big {
+    position: fixed; /* Floating above */
+    transition: transform 0.23s; /* Sticking effect */
+    pointer-events: none; /* Allow clicking trough the div */
+    z-index: 1000;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.navbar {
+    background: #131313;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar__logo {
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 60px;
+    margin-left: 30px;
+    width: 1000px;
+}
+
+.fa-gem {
+    margin-right: 0.5rem;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__item {
+    height: 80px;
+}
+
+.navbar__links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+
+.navbar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 150px;
+    border: none;
+    outline: none;
+    border-radius: none;
+    background: #f77862;
+    color: #fff;
+}
+
+.button:hover {
+    background: #4837ff;
+    transition: all 0.3s ease;
+}
+
+.navbar__links:hover {
+    color: #f77062;
+    transition: all 0.3s ease;
+}
+
+.navbar__links.active {
+    color: #f77062; /* Example: Change color to highlight the active link */
+    border-bottom: 2px solid #f77062; /* Optional: Add a border at the bottom */
+}
+
+.main {
+    background-color: #141414;
+}
+
+.main__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: #141414;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.main__content h1 {
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0944 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+.main__content h1:hover {
+    font-size: 5rem;
+    transition: all 0.35s;
+}
+
+#math__link, #chess__link {
+    font-size: 64px;
+    transition: font-size 0.3s ease;
+    text-decoration: none; /* Optional, if you want to remove the underline */
+}
+
+.main__content h2 {
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main__content h2:hover {
+    font-size: 5rem;
+    transition: all 0.35s;
+}
+
+.main__content h2:after {
+    font-size: 5rem;
+    transition: all 0.35s;
+}
+
+.main__content h3 {
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #33d921 0%, #82e677 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main__content h3:hover {
+    font-size: 5rem;
+    transition: all 0.35s;
+}
+
+#coding__link {
+    transition: all 0.35s;
+    text-decoration: none;
+}
+
+.main__content h4 {
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #d2dd0a 0%, #dcea9e 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main__content h4:hover {
+    font-size: 5rem;
+    transition: all 0.35s ease;
+}
+
+.main__btn {
+    font-size: 1rem;
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+.main__btn a {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+}
+
+.main__btn:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #4837ff;
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+.main__btn:hover {
+    color: #fff
+}
+
+.main__btn:hover:after {
+    width: 100%;
+}
+
+.main__img--container {
+    text-align: center;
+}
+
+#math__img {
+    margin-left: 1200px;
+    margin-top: -425px;
+    text-align: center;
+    width: 500px;
+}
+
+#ukmt__img {
+    margin-left: 1000px;
+    margin-top: -425px;
+    text-align: center;
+    width: 500px;
+}
+
+#moems {
+    transition: color 0.3s ease;
+}
+
+#gold {
+    transition: color 0.3s ease;
+}
+
+.main__math__content {
+    background: #131313;
+    height: 100vh;
+}
+
+.main__math__content h1 {
+    text-align: center;
+    justify-content: center;
+    font-size: 5rem;
+    background-image: linear-gradient(to top, #ff0944 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.math__awards__content h2 {
+    font-size: 3rem;
+    color: #fff;
+    margin-left: 200px;
+}
+
+.math__awards__list__item {
+    text-align: left;
+    margin-left: 250px;
+    margin-top: 25px;
+    color: #fff;
+}
+
+.math__awards__list__item__sub {
+    text-align: left;
+    margin-left: 275px;
+    margin-top: 25px;
+    color: #fff;
+}
+
+.math__awards__content {
+    margin-top: 100px;
+}
+
+.math__honour__content {
+    background: #131313;
+    height: 100vh;
+}
+
+.math__honour__content__robotics {
+    background: #131313;
+    height: 50vh;
+}
+
+.math__honour__content h2 {
+    font-size: 3rem;
+    color: #fff;
+    margin-left: 200px;
+}
+
+.math__honour__content__swim h2 {
+    font-size: 3rem;
+    color: #fff;
+    margin-top: 150px;
+    margin-left: 200px;
+}
+
+.math__honour__content__basket h2 {
+    font-size: 3rem;
+    color: #fff;
+    margin-top: 85px;
+    margin-left: 200px;
+}
+
+.math__honour__list__item {
+    text-align: left;
+    margin-left: 250px;
+    margin-top: 25px;
+    color: #fff;
+}
+
+.math__honour__list__item__github {
+    text-align: left;
+    margin-left: 250px;
+    margin-top: 25px;
+    color: #fff;
+    font-size: 1.35rem;
+}
+
+.math__honour__list__item__sub {
+    text-align: left;
+    margin-left: 275px;
+    margin-top: 25px;
+    color: #fff;
+}
+
+.main__sports__content {
+    background: #131313;
+    height: 100vh;
+}
+
+.math__honour__content__applications {
+    background: #131313;
+    height: 100vh;
+}
+
+.sports__text {
+    text-align: center;
+    justify-content: center;
+    font-size: 5rem;
+    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.music__text {
+    text-align: center;
+    justify-content: center;
+    font-size: 5rem;
+    background-image: linear-gradient(to top, #d2dd0a 0%, #dcea9e 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.math__honour__content__basket {
+    background: #131313;
+    height: 100vh;
+}
+
+.math__honour__content h1 {
+    text-align: center;
+    justify-content: center;
+    font-size: 5rem;
+    background-image: linear-gradient(to top, #33d921 0%, #82e677 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.math__honour__title__applications {
+    margin-top: 150px;
+}
+
+.math__honour__title__music__achievements {
+    margin-top: 150px;
+}
+
+.grow {
+    transform: scale(2);
+    transition: all 0.35s ease;
+}
