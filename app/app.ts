@@ -15,7 +15,7 @@ if (mathImg && moems) {
     });
 
     mathImg.addEventListener('mouseout', () => {
-        moems.style.color = ''; // Reset to original color
+        moems.style.color = '';
     });
 }
 
@@ -28,6 +28,6 @@ if (ukmtImg && gold) {
     });
 
     ukmtImg.addEventListener('mouseout', () => {
-        gold.style.color = ''; // Reset to original color
+        gold.style.color = ''; 
     });
 }
