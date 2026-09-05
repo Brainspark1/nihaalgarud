@@ -95,8 +95,8 @@
     width: 150px;
     border: none;
     outline: none;
-    border-radius: none;
-    background: #f77862;
+    border-radius: 4px;
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
     color: #fff;
 }
 
@@ -144,16 +144,15 @@
     -moz-text-fill-color: transparent;
     text-decoration: none;
 }
-
+/* 
 .main__content h1:hover {
     font-size: 5rem;
-    transition: all 0.35s;
-}
+    transition: all 0.35s ease-in-out;
+} */
 
 #math__link, #chess__link {
     font-size: 64px;
-    transition: font-size 0.3s ease;
-    text-decoration: none; /* Optional, if you want to remove the underline */
+    text-decoration: none;
 }
 
 .main__content h2 {
@@ -167,10 +166,10 @@
     -moz-text-fill-color: transparent;
 }
 
-.main__content h2:hover {
+/* .main__content h2:hover {
     font-size: 5rem;
     transition: all 0.35s;
-}
+} */
 
 .main__content h2:after {
     font-size: 5rem;
@@ -187,14 +186,14 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
 }
-
+/* 
 .main__content h3:hover {
     font-size: 5rem;
     transition: all 0.35s;
-}
+} */
 
 #coding__link {
-    transition: all 0.35s;
+    transition: all 0.35s ease-in-out;
     text-decoration: none;
 }
 
@@ -209,10 +208,10 @@
     -moz-text-fill-color: transparent;
 }
 
-.main__content h4:hover {
+/* .main__content h4:hover {
     font-size: 5rem;
-    transition: all 0.35s ease;
-}
+    transition: all 0.35s ease-in-out;
+} */
 
 .main__btn {
     font-size: 1rem;
@@ -413,7 +412,7 @@
     height: 100vh;
 }
 
-.sports__text {
+.coding__text {
     text-align: center;
     justify-content: center;
     font-size: 5rem;
@@ -435,5 +434,15 @@
 
 .grow {
     transform: scale(2);
-    transition: all 0.35s ease;
+    transition: all 0.35s ease-in-out;
+}
+
+.grow__text {
+    display: block;
+    transition: transform 0.35s ease-in-out;
+    transform-origin: left center;
+}
+
+.grow__text:hover {
+    transform: scale(1.5);
 }
